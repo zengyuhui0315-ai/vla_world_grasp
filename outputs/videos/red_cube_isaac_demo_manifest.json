@@ -1,0 +1,13 @@
+{
+  "source": "isaac_camera",
+  "frames_dir": "outputs/videos/red_cube_isaac_demo_frames",
+  "frame_count": 82,
+  "fps": 20,
+  "mp4_path": null,
+  "ffmpeg": {
+    "available": false,
+    "encoded": false,
+    "message": "ffmpeg not found; frames were saved instead",
+    "frames_dir": "outputs/videos/red_cube_isaac_demo_frames"
+  }
+}

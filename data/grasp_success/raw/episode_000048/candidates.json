@@ -1,0 +1,216 @@
+{
+  "instruction": "抓起绿色球",
+  "parsed_instruction": {
+    "raw_instruction": "抓起绿色球",
+    "language": "zh",
+    "intent": "pick",
+    "target_color": "green",
+    "target_type": "sphere",
+    "target_position_hint": null,
+    "normalized_target_label_zh": "绿色球",
+    "normalized_target_label_en": "green sphere",
+    "confidence": 0.8500000000000001
+  },
+  "target_name": "green_sphere",
+  "selection_reason": "matched color+type: green sphere",
+  "candidates": [
+    {
+      "candidate_id": 4,
+      "position": [
+        0.4002488872984882,
+        0.10784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.9562453719223756,
+      "score_terms": {
+        "center_score": 1.0,
+        "reachability_score": 0.8312268596118777,
+        "collision_score": 0.95,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 4 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.831；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 5,
+      "position": [
+        0.4002488872984882,
+        0.13784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.7417453719223756,
+      "score_terms": {
+        "center_score": 0.625,
+        "reachability_score": 0.8212268596118777,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 5 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.821；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 1,
+      "position": [
+        0.37024888729848815,
+        0.10784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.7411999173769209,
+      "score_terms": {
+        "center_score": 0.6249999999999997,
+        "reachability_score": 0.818499586884605,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 1 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.818；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 3,
+      "position": [
+        0.4002488872984882,
+        0.07784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.7361140790460751,
+      "score_terms": {
+        "center_score": 0.625,
+        "reachability_score": 0.8412268596118777,
+        "collision_score": 0.4018435356184977,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 3 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.841；与桌面和其他物体的碰撞风险较低程度 collision_score=0.402；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 10,
+      "position": [
+        0.37024888729848815,
+        0.10784830802910944,
+        0.05
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.7311999173769209,
+      "score_terms": {
+        "center_score": 0.6249999999999997,
+        "reachability_score": 0.818499586884605,
+        "collision_score": 0.4,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 10 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.818；与桌面和其他物体的碰撞风险较低程度 collision_score=0.400；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=45.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 7,
+      "position": [
+        0.4302488872984882,
+        0.10784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.7284683612105846,
+      "score_terms": {
+        "center_score": 0.6249999999999997,
+        "reachability_score": 0.8439541323391504,
+        "collision_score": 0.36088767371377295,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 7 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.844；与桌面和其他物体的碰撞风险较低程度 collision_score=0.361；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 8,
+      "position": [
+        0.4302488872984882,
+        0.13784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6976918007008569,
+      "score_terms": {
+        "center_score": 0.4696699141100892,
+        "reachability_score": 0.8339541323391504,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 8 距离目标中心 0.042 米，center_score=0.470；Franka 工作空间可达性 reachability_score=0.834；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 0,
+      "position": [
+        0.37024888729848815,
+        0.07784830802910944,
+        0.05
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6966008916099478,
+      "score_terms": {
+        "center_score": 0.4696699141100892,
+        "reachability_score": 0.828499586884605,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 0 距离目标中心 0.042 米，center_score=0.470；Franka 工作空间可达性 reachability_score=0.828；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    }
+  ],
+  "selected_candidate": {
+    "candidate_id": 4,
+    "position": [
+      0.4002488872984882,
+      0.10784830802910944,
+      0.05
+    ],
+    "yaw": 0.0,
+    "gripper_width": 0.025,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "score": 0.9562453719223756,
+    "score_terms": {
+      "center_score": 1.0,
+      "reachability_score": 0.8312268596118777,
+      "collision_score": 0.95,
+      "height_score": 1.0,
+      "gripper_width_score": 1.0,
+      "yaw_score": 1.0
+    },
+    "explanation": "候选 4 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.831；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 sphere 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+  }
+}

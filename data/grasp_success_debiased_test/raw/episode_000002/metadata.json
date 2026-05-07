@@ -1,0 +1,12 @@
+{
+  "episode_id": "episode_000002",
+  "scene_seed": 1,
+  "instruction_path": "data/grasp_success_debiased_test/raw/episode_000002/instruction.txt",
+  "parsed_instruction_path": "data/grasp_success_debiased_test/raw/episode_000002/parsed_instruction.json",
+  "rgb_path": "data/grasp_success_debiased_test/raw/episode_000002/rgb.png",
+  "depth_path": "data/grasp_success_debiased_test/raw/episode_000002/depth.npy",
+  "object_states_path": "data/grasp_success_debiased_test/raw/episode_000002/object_states.json",
+  "candidate_json_path": "data/grasp_success_debiased_test/raw/episode_000002/candidates.json",
+  "result_path": "data/grasp_success_debiased_test/raw/episode_000002/result.json",
+  "no_candidate_markers": true
+}

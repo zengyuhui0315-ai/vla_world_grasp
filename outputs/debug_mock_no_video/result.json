@@ -1,0 +1,653 @@
+{
+  "instruction": "抓起蓝色圆柱",
+  "vla_backend": "mock",
+  "headless": true,
+  "seed": null,
+  "sim_backend": "mock",
+  "object_states": [
+    {
+      "name": "red_cube",
+      "type": "cube",
+      "color": "red",
+      "position": [
+        0.45,
+        -0.12,
+        0.045
+      ],
+      "size": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "rgb": [
+        1.0,
+        0.05,
+        0.03
+      ],
+      "shape": "cube",
+      "object_id": "red_cube",
+      "label": "red cube"
+    },
+    {
+      "name": "blue_cylinder",
+      "type": "cylinder",
+      "color": "blue",
+      "position": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "size": [
+        0.045,
+        0.045,
+        0.08
+      ],
+      "rgb": [
+        0.05,
+        0.24,
+        1.0
+      ],
+      "shape": "cylinder",
+      "object_id": "blue_cylinder",
+      "label": "blue cylinder"
+    },
+    {
+      "name": "green_sphere",
+      "type": "sphere",
+      "color": "green",
+      "position": [
+        0.4,
+        0.11,
+        0.05
+      ],
+      "size": [
+        0.06,
+        0.06,
+        0.06
+      ],
+      "rgb": [
+        0.05,
+        0.75,
+        0.18
+      ],
+      "shape": "sphere",
+      "object_id": "green_sphere",
+      "label": "green sphere"
+    }
+  ],
+  "vla_result": {
+    "mode": "target_localization",
+    "backend": "mock_vla",
+    "status": "ok",
+    "message": "target localized by deterministic mock_vla",
+    "target": {
+      "object_id": "blue_cylinder",
+      "label": "blue cylinder",
+      "point_3d": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "confidence": 0.95,
+      "bbox_xyxy": null,
+      "point_2d": null,
+      "metadata": {
+        "color": "blue",
+        "shape": "cylinder",
+        "size": [
+          0.045,
+          0.045,
+          0.08
+        ],
+        "source": "object_states"
+      }
+    },
+    "metadata": {
+      "instruction": "抓起蓝色圆柱",
+      "selection": "deterministic_mock"
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "blue_cylinder_top_down_00",
+      "position": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.0,
+          0.0
+        ],
+        "collision_risk": 0.05,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.9850000000000001,
+      "score_components": {
+        "distance": 1.0,
+        "collision": 0.95,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_01",
+      "position": [
+        0.532,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.012,
+          0.0
+        ],
+        "collision_risk": 0.29,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.8049999999999999,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.71,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_02",
+      "position": [
+        0.508,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          -0.012,
+          0.0
+        ],
+        "collision_risk": 0.29,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.8049999999999999,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.71,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_03",
+      "position": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.0,
+          0.0
+        ],
+        "collision_risk": 0.1,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.97,
+      "score_components": {
+        "distance": 1.0,
+        "collision": 0.9,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_04",
+      "position": [
+        0.532,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.012,
+          0.0
+        ],
+        "collision_risk": 0.33999999999999997,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.79,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.66,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_05",
+      "position": [
+        0.508,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          -0.012,
+          0.0
+        ],
+        "collision_risk": 0.33999999999999997,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.79,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.66,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_06",
+      "position": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.0,
+          0.0
+        ],
+        "collision_risk": 0.05,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.9850000000000001,
+      "score_components": {
+        "distance": 1.0,
+        "collision": 0.95,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_07",
+      "position": [
+        0.532,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.012,
+          0.0
+        ],
+        "collision_risk": 0.29,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.8049999999999999,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.71,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_08",
+      "position": [
+        0.508,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          -0.012,
+          0.0
+        ],
+        "collision_risk": 0.29,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.8049999999999999,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.71,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_09",
+      "position": [
+        0.52,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 2.356194490192345,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.0,
+          0.0
+        ],
+        "collision_risk": 0.1,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.97,
+      "score_components": {
+        "distance": 1.0,
+        "collision": 0.9,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_10",
+      "position": [
+        0.532,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 2.356194490192345,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          0.012,
+          0.0
+        ],
+        "collision_risk": 0.33999999999999997,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.79,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.66,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    },
+    {
+      "candidate_id": "blue_cylinder_top_down_11",
+      "position": [
+        0.508,
+        0.03,
+        0.06
+      ],
+      "approach": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "yaw": 2.356194490192345,
+      "gripper_width": 0.06,
+      "pregrasp_height": 0.15,
+      "grasp_depth": 0.035,
+      "target_object": "blue_cylinder",
+      "metadata": {
+        "generator": "top_down_grid",
+        "xy_offset": [
+          -0.012,
+          0.0
+        ],
+        "collision_risk": 0.33999999999999997,
+        "target_size": [
+          0.045,
+          0.045,
+          0.08
+        ]
+      },
+      "score": 0.79,
+      "score_components": {
+        "distance": 0.7599999999999998,
+        "collision": 0.66,
+        "gripper_width": 1.0,
+        "workspace": 1.0
+      }
+    }
+  ],
+  "selected_candidate": {
+    "candidate_id": "blue_cylinder_top_down_00",
+    "position": [
+      0.52,
+      0.03,
+      0.06
+    ],
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "yaw": 0.0,
+    "gripper_width": 0.06,
+    "pregrasp_height": 0.15,
+    "grasp_depth": 0.035,
+    "target_object": "blue_cylinder",
+    "metadata": {
+      "generator": "top_down_grid",
+      "xy_offset": [
+        0.0,
+        0.0
+      ],
+      "collision_risk": 0.05,
+      "target_size": [
+        0.045,
+        0.045,
+        0.08
+      ]
+    },
+    "score": 0.9850000000000001,
+    "score_components": {
+      "distance": 1.0,
+      "collision": 0.95,
+      "gripper_width": 1.0,
+      "workspace": 1.0
+    }
+  },
+  "execution": {
+    "success": true,
+    "target_object": "blue_cylinder",
+    "initial_z": 0.06,
+    "final_z": 0.37,
+    "success_threshold_z": 0.14,
+    "trajectory": [
+      {
+        "name": "move_above",
+        "position": [
+          0.52,
+          0.03,
+          0.21
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "open_gripper",
+        "position": null,
+        "gripper_width": 0.06
+      },
+      {
+        "name": "move_down",
+        "position": [
+          0.52,
+          0.03,
+          0.06
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "close_gripper",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "lift",
+        "position": [
+          0.52,
+          0.03,
+          0.37
+        ],
+        "gripper_width": null
+      }
+    ]
+  },
+  "success": true
+}

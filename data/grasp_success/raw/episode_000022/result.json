@@ -1,0 +1,124 @@
+{
+  "episode_id": 22,
+  "scene_seed": 21,
+  "instruction_zh": "抓起蓝色圆柱",
+  "parsed_instruction": {
+    "raw_instruction": "抓起蓝色圆柱",
+    "language": "zh",
+    "intent": "pick",
+    "target_color": "blue",
+    "target_type": "cylinder",
+    "target_position_hint": null,
+    "normalized_target_label_zh": "蓝色圆柱",
+    "normalized_target_label_en": "blue cylinder",
+    "confidence": 0.8500000000000001
+  },
+  "target_name": "blue_cylinder",
+  "target_type": "cylinder",
+  "target_color": "blue",
+  "selected_candidate": {
+    "candidate_id": 4,
+    "position": [
+      0.5226999988080945,
+      0.029582009441149023,
+      0.07
+    ],
+    "yaw": 0.0,
+    "gripper_width": 0.025,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "score": 0.9650028156333377,
+    "score_terms": {
+      "center_score": 1.0,
+      "reachability_score": 0.8750140781666881,
+      "collision_score": 0.95,
+      "height_score": 1.0,
+      "gripper_width_score": 1.0,
+      "yaw_score": 1.0
+    },
+    "explanation": "候选 4 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.875；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+  },
+  "success": true,
+  "attached": true,
+  "target_initial_z": 0.07,
+  "target_final_z": 0.3541565716266632,
+  "execution": {
+    "success": true,
+    "target_object": "blue_cylinder",
+    "target_name": "blue_cylinder",
+    "target_type": "cylinder",
+    "debug_attach_on_grasp": true,
+    "attached": true,
+    "initial_z": 0.07,
+    "final_z": 0.3541565716266632,
+    "target_initial_z": 0.07,
+    "target_final_z": 0.3541565716266632,
+    "success_threshold_z": 0.15000000000000002,
+    "trajectory": [
+      {
+        "name": "open_gripper",
+        "position": null,
+        "gripper_width": 0.08
+      },
+      {
+        "name": "approach",
+        "position": [
+          0.5226999988080945,
+          0.029582009441149023,
+          0.39
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "pre_grasp",
+        "position": [
+          0.5226999988080945,
+          0.029582009441149023,
+          0.25
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "descend",
+        "position": [
+          0.5226999988080945,
+          0.029582009441149023,
+          0.14500000000000002
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "close_gripper",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "close_gripper_hold",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "lift",
+        "position": [
+          0.5226999988080945,
+          0.029582009441149023,
+          0.43
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "final_hold",
+        "position": null,
+        "gripper_width": 0.0
+      }
+    ]
+  },
+  "video": null,
+  "metadata": {
+    "sim_backend": "isaac",
+    "rgb_source": "isaac_camera",
+    "depth_source": "isaac_camera",
+    "candidate_success_labels": "selected candidate has real episode success; non-selected rows leave success empty",
+    "candidate_markers": "disabled"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "抓起蓝色球",
+  "language": "zh",
+  "intent": "pick",
+  "target_color": "blue",
+  "target_type": "sphere",
+  "target_position_hint": null,
+  "normalized_target_label_zh": "蓝色球",
+  "normalized_target_label_en": "blue sphere",
+  "confidence": 0.8500000000000001
+}

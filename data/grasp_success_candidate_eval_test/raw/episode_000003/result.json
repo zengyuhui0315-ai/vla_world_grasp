@@ -1,0 +1,452 @@
+{
+  "episode_id": 3,
+  "scene_seed": 2,
+  "instruction_zh": "抓起绿色方块",
+  "parsed_instruction": {
+    "raw_instruction": "抓起绿色方块",
+    "language": "zh",
+    "intent": "pick",
+    "target_color": "green",
+    "target_type": "cube",
+    "target_position_hint": null,
+    "normalized_target_label_zh": "绿色方块",
+    "normalized_target_label_en": "green cube",
+    "confidence": 0.8500000000000001
+  },
+  "target_name": "green_cube_0",
+  "target_type": "cube",
+  "target_color": "green",
+  "requested_target_name": "green_cube_0",
+  "debug_attach_on_grasp": true,
+  "attach_mode": "mixed",
+  "selected_candidate": {
+    "candidate_id": 6,
+    "position": [
+      0.5339924972671308,
+      0.06110294451847953,
+      0.07
+    ],
+    "dx_to_target": 0.0,
+    "dy_to_target": 0.0,
+    "dz_to_target": 0.02500000000000001,
+    "distance_to_target_center": 0.02500000000000001,
+    "neighbor_clearance": 0.06939559907065895,
+    "table_clearance": 0.05,
+    "yaw": 1.5707963267948966,
+    "gripper_width": 0.04,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "score": 0.9243993077407056,
+    "score_terms": {
+      "center_score": 1.0,
+      "reachability_score": 0.8597163428855624,
+      "collision_score": 0.8122801958179653,
+      "height_score": 1.0,
+      "gripper_width_score": 0.9,
+      "yaw_score": 1.0
+    },
+    "explanation": "候选 6 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.860；与桌面和其他物体的碰撞风险较低程度 collision_score=0.812；抓取高度合理性 height_score=1.000；夹爪宽度 0.040 米对 cube 的匹配分 gripper_width_score=0.900；yaw=90.0 度的方向适配分 yaw_score=1.000。"
+  },
+  "success": false,
+  "attached": false,
+  "natural_physics_success": null,
+  "target_initial_z": 0.045,
+  "target_final_z": 0.045,
+  "execution": {
+    "success": false,
+    "target_object": "green_cube_0",
+    "target_name": "green_cube_0",
+    "target_type": "cube",
+    "debug_attach_on_grasp": true,
+    "attached": false,
+    "initial_z": 0.045,
+    "final_z": 0.045,
+    "target_initial_z": 0.045,
+    "target_final_z": 0.045,
+    "success_threshold_z": 0.125,
+    "trajectory": [
+      {
+        "name": "open_gripper",
+        "position": null,
+        "gripper_width": 0.035
+      },
+      {
+        "name": "approach",
+        "position": [
+          0.5339924972671308,
+          0.06110294451847953,
+          0.325
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "pre_grasp",
+        "position": [
+          0.5339924972671308,
+          0.06110294451847953,
+          0.185
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "descend",
+        "position": [
+          0.5339924972671308,
+          0.06110294451847953,
+          0.09
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "close_gripper",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "close_gripper_hold",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "lift",
+        "position": [
+          0.5339924972671308,
+          0.06110294451847953,
+          0.365
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "final_hold",
+        "position": null,
+        "gripper_width": 0.0
+      }
+    ]
+  },
+  "candidate_eval_mode": "top_k",
+  "candidate_eval_k": 4,
+  "reset_per_candidate": true,
+  "candidate_eval_results": [
+    {
+      "candidate_id": 6,
+      "success": false,
+      "attached": false,
+      "target_initial_z": 0.045,
+      "target_final_z": 0.045,
+      "execution": {
+        "success": false,
+        "target_object": "green_cube_0",
+        "target_name": "green_cube_0",
+        "target_type": "cube",
+        "debug_attach_on_grasp": true,
+        "attached": false,
+        "initial_z": 0.045,
+        "final_z": 0.045,
+        "target_initial_z": 0.045,
+        "target_final_z": 0.045,
+        "success_threshold_z": 0.125,
+        "trajectory": [
+          {
+            "name": "open_gripper",
+            "position": null,
+            "gripper_width": 0.035
+          },
+          {
+            "name": "approach",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.325
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "pre_grasp",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.185
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "descend",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.09
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "close_gripper",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "close_gripper_hold",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "lift",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.365
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "final_hold",
+            "position": null,
+            "gripper_width": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": 0,
+      "success": false,
+      "attached": false,
+      "target_initial_z": 0.045,
+      "target_final_z": 0.045,
+      "execution": {
+        "success": false,
+        "target_object": "green_cube_0",
+        "target_name": "green_cube_0",
+        "target_type": "cube",
+        "debug_attach_on_grasp": true,
+        "attached": false,
+        "initial_z": 0.045,
+        "final_z": 0.045,
+        "target_initial_z": 0.045,
+        "target_final_z": 0.045,
+        "success_threshold_z": 0.125,
+        "trajectory": [
+          {
+            "name": "open_gripper",
+            "position": null,
+            "gripper_width": 0.035
+          },
+          {
+            "name": "approach",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.325
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "pre_grasp",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.185
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "descend",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.09
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "close_gripper",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "close_gripper_hold",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "lift",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.365
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "final_hold",
+            "position": null,
+            "gripper_width": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": 5,
+      "success": false,
+      "attached": false,
+      "target_initial_z": 0.045,
+      "target_final_z": 0.045,
+      "execution": {
+        "success": false,
+        "target_object": "green_cube_0",
+        "target_name": "green_cube_0",
+        "target_type": "cube",
+        "debug_attach_on_grasp": true,
+        "attached": false,
+        "initial_z": 0.045,
+        "final_z": 0.045,
+        "target_initial_z": 0.045,
+        "target_final_z": 0.045,
+        "success_threshold_z": 0.125,
+        "trajectory": [
+          {
+            "name": "open_gripper",
+            "position": null,
+            "gripper_width": 0.035
+          },
+          {
+            "name": "approach",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.325
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "pre_grasp",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.185
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "descend",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.09
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "close_gripper",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "close_gripper_hold",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "lift",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.365
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "final_hold",
+            "position": null,
+            "gripper_width": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "candidate_id": 11,
+      "success": false,
+      "attached": false,
+      "target_initial_z": 0.045,
+      "target_final_z": 0.045,
+      "execution": {
+        "success": false,
+        "target_object": "green_cube_0",
+        "target_name": "green_cube_0",
+        "target_type": "cube",
+        "debug_attach_on_grasp": true,
+        "attached": false,
+        "initial_z": 0.045,
+        "final_z": 0.045,
+        "target_initial_z": 0.045,
+        "target_final_z": 0.045,
+        "success_threshold_z": 0.125,
+        "trajectory": [
+          {
+            "name": "open_gripper",
+            "position": null,
+            "gripper_width": 0.035
+          },
+          {
+            "name": "approach",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.325
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "pre_grasp",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.185
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "descend",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.09
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "close_gripper",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "close_gripper_hold",
+            "position": null,
+            "gripper_width": 0.0
+          },
+          {
+            "name": "lift",
+            "position": [
+              0.5339924972671308,
+              0.06110294451847953,
+              0.365
+            ],
+            "gripper_width": null
+          },
+          {
+            "name": "final_hold",
+            "position": null,
+            "gripper_width": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "video": null,
+  "metadata": {
+    "sim_backend": "isaac",
+    "rgb_source": "isaac_camera",
+    "depth_source": "isaac_camera",
+    "candidate_success_labels": "candidate_eval rows have real candidate success; non-executed rows leave success empty",
+    "label_policy": "candidate-level eval labels when candidate_eval_mode is top_k/random_k; selected-only otherwise",
+    "candidate_markers": "disabled"
+  }
+}

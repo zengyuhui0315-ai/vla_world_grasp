@@ -1,0 +1,494 @@
+{
+  "instruction": "抓起红色圆柱",
+  "parsed_instruction": {
+    "raw_instruction": "抓起红色圆柱",
+    "language": "zh",
+    "intent": "pick",
+    "target_color": "red",
+    "target_type": "cylinder",
+    "target_position_hint": null,
+    "normalized_target_label_zh": "红色圆柱",
+    "normalized_target_label_en": "red cylinder",
+    "confidence": 0.8500000000000001
+  },
+  "target_name": "red_cylinder_1",
+  "selection_reason": "matched color+type: red cylinder",
+  "candidates": [
+    {
+      "candidate_id": 5,
+      "position": [
+        0.43312995168435287,
+        0.14283093463497248,
+        0.055
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.015000000000000006,
+      "neighbor_clearance": 0.08574782190529454,
+      "table_clearance": 0.035,
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.9441872561345404,
+      "score_terms": {
+        "center_score": 1.0,
+        "reachability_score": 0.835071082098876,
+        "collision_score": 0.8858651985738254,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 5 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.835；与桌面和其他物体的碰撞风险较低程度 collision_score=0.886；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 6,
+      "position": [
+        0.43312995168435287,
+        0.14283093463497248,
+        0.09
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": 0.0,
+      "dz_to_target": 0.01999999999999999,
+      "distance_to_target_center": 0.01999999999999999,
+      "neighbor_clearance": 0.08574782190529454,
+      "table_clearance": 0.06999999999999999,
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.03,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.9363650339123181,
+      "score_terms": {
+        "center_score": 1.0,
+        "reachability_score": 0.845959970987765,
+        "collision_score": 0.8858651985738254,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 6 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.846；与桌面和其他物体的碰撞风险较低程度 collision_score=0.886；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=90.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 14,
+      "position": [
+        0.43312995168435287,
+        0.14283093463497248,
+        0.075
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": 0.0,
+      "dz_to_target": 0.0049999999999999906,
+      "distance_to_target_center": 0.0049999999999999906,
+      "neighbor_clearance": 0.08574782190529454,
+      "table_clearance": 0.05499999999999999,
+      "yaw": 0.0,
+      "gripper_width": 0.02,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.9354317005789847,
+      "score_terms": {
+        "center_score": 1.0,
+        "reachability_score": 0.8412933043210983,
+        "collision_score": 0.8858651985738254,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 14 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.841；与桌面和其他物体的碰撞风险较低程度 collision_score=0.886；抓取高度合理性 height_score=1.000；夹爪宽度 0.020 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 0,
+      "position": [
+        0.43312995168435287,
+        0.14283093463497248,
+        0.065
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.0050000000000000044,
+      "neighbor_clearance": 0.08574782190529454,
+      "table_clearance": 0.045,
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.03,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.9248094783567625,
+      "score_terms": {
+        "center_score": 1.0,
+        "reachability_score": 0.8381821932099871,
+        "collision_score": 0.8358651985738254,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 0 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.838；与桌面和其他物体的碰撞风险较低程度 collision_score=0.836；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=45.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 9,
+      "position": [
+        0.4631299516843529,
+        0.14283093463497248,
+        0.055
+      ],
+      "dx_to_target": 0.030000000000000027,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.033541019662496875,
+      "neighbor_clearance": 0.05601846039565016,
+      "table_clearance": 0.035,
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.03,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6974762853213148,
+      "score_terms": {
+        "center_score": 0.6249999999999997,
+        "reachability_score": 0.8477983548261487,
+        "collision_score": 0.25208307178042566,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 9 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.848；与桌面和其他物体的碰撞风险较低程度 collision_score=0.252；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=90.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 15,
+      "position": [
+        0.40312995168435284,
+        0.17283093463497248,
+        0.055
+      ],
+      "dx_to_target": -0.030000000000000027,
+      "dy_to_target": 0.03,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.045000000000000026,
+      "neighbor_clearance": 0.12132131802971749,
+      "table_clearance": 0.035,
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6933697361073474,
+      "score_terms": {
+        "center_score": 0.4696699141100892,
+        "reachability_score": 0.8123438093716033,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 15 距离目标中心 0.042 米，center_score=0.470；Franka 工作空间可达性 reachability_score=0.812；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 1,
+      "position": [
+        0.37312995168435287,
+        0.14283093463497248,
+        0.065
+      ],
+      "dx_to_target": -0.06,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.06020797289396147,
+      "neighbor_clearance": 0.14548311534100158,
+      "table_clearance": 0.045,
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6275455295510884,
+      "score_terms": {
+        "center_score": 0.25,
+        "reachability_score": 0.8127276477554417,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 1 距离目标中心 0.060 米，center_score=0.250；Franka 工作空间可达性 reachability_score=0.813；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=90.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 4,
+      "position": [
+        0.43312995168435287,
+        0.20283093463497248,
+        0.065
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": 0.06,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.06020797289396147,
+      "neighbor_clearance": 0.10638899812931588,
+      "table_clearance": 0.045,
+      "yaw": 0.0,
+      "gripper_width": 0.02,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.6186364386419975,
+      "score_terms": {
+        "center_score": 0.25,
+        "reachability_score": 0.8181821932099872,
+        "collision_score": 0.44999999999999996,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 4 距离目标中心 0.060 米，center_score=0.250；Franka 工作空间可达性 reachability_score=0.818；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.020 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 3,
+      "position": [
+        0.43312995168435287,
+        0.08283093463497249,
+        0.065
+      ],
+      "dx_to_target": 0.0,
+      "dy_to_target": -0.06,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.06020797289396147,
+      "neighbor_clearance": 0.09406916514960931,
+      "table_clearance": 0.045,
+      "yaw": 2.356194490192345,
+      "gripper_width": 0.055,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5612986872766459,
+      "score_terms": {
+        "center_score": 0.25,
+        "reachability_score": 0.8581821932099871,
+        "collision_score": 0.37331124317324194,
+        "height_score": 1.0,
+        "gripper_width_score": 0.4,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 3 距离目标中心 0.060 米，center_score=0.250；Franka 工作空间可达性 reachability_score=0.858；与桌面和其他物体的碰撞风险较低程度 collision_score=0.373；抓取高度合理性 height_score=1.000；夹爪宽度 0.055 米对 cylinder 的匹配分 gripper_width_score=0.400；yaw=135.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 13,
+      "position": [
+        0.49312995168435286,
+        0.14283093463497248,
+        0.055
+      ],
+      "dx_to_target": 0.06,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.06184658438426491,
+      "neighbor_clearance": 0.026575549328807208,
+      "table_clearance": 0.035,
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.03,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5479465220450237,
+      "score_terms": {
+        "center_score": 0.25,
+        "reachability_score": 0.8451426382454857,
+        "collision_score": 0.06958997197963246,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 13 距离目标中心 0.060 米，center_score=0.250；Franka 工作空间可达性 reachability_score=0.845；与桌面和其他物体的碰撞风险较低程度 collision_score=0.070；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=45.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 12,
+      "position": [
+        0.4631299516843529,
+        0.08283093463497249,
+        0.065
+      ],
+      "dx_to_target": 0.030000000000000027,
+      "dy_to_target": -0.06,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.06726812023536856,
+      "neighbor_clearance": 0.06692664749148855,
+      "table_clearance": 0.045,
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.055,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5128582284610654,
+      "score_terms": {
+        "center_score": 0.16147450843757882,
+        "reachability_score": 0.8709094659372599,
+        "collision_score": 0.2511699137116985,
+        "height_score": 1.0,
+        "gripper_width_score": 0.4,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 12 距离目标中心 0.067 米，center_score=0.161；Franka 工作空间可达性 reachability_score=0.871；与桌面和其他物体的碰撞风险较低程度 collision_score=0.251；抓取高度合理性 height_score=1.000；夹爪宽度 0.055 米对 cylinder 的匹配分 gripper_width_score=0.400；yaw=45.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 10,
+      "position": [
+        0.4631299516843529,
+        0.08283093463497249,
+        0.055
+      ],
+      "dx_to_target": 0.030000000000000027,
+      "dy_to_target": -0.06,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.06873863542433761,
+      "neighbor_clearance": 0.06692664749148855,
+      "table_clearance": 0.035,
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.055,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5122360062388431,
+      "score_terms": {
+        "center_score": 0.16147450843757882,
+        "reachability_score": 0.8677983548261488,
+        "collision_score": 0.2511699137116985,
+        "height_score": 1.0,
+        "gripper_width_score": 0.4,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 10 距离目标中心 0.067 米，center_score=0.161；Franka 工作空间可达性 reachability_score=0.868；与桌面和其他物体的碰撞风险较低程度 collision_score=0.251；抓取高度合理性 height_score=1.000；夹爪宽度 0.055 米对 cylinder 的匹配分 gripper_width_score=0.400；yaw=45.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 7,
+      "position": [
+        0.49312995168435286,
+        0.08283093463497249,
+        0.055
+      ],
+      "dx_to_target": 0.06,
+      "dy_to_target": -0.06,
+      "dz_to_target": -0.015000000000000006,
+      "distance_to_target_center": 0.08616843969807043,
+      "neighbor_clearance": 0.0420860059023771,
+      "table_clearance": 0.035,
+      "yaw": 0.0,
+      "gripper_width": 0.025,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5109059329612365,
+      "score_terms": {
+        "center_score": 0.0,
+        "reachability_score": 0.8651426382454858,
+        "collision_score": 0.18938702656069695,
+        "height_score": 1.0,
+        "gripper_width_score": 1.0,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 7 距离目标中心 0.085 米，center_score=0.000；Franka 工作空间可达性 reachability_score=0.865；与桌面和其他物体的碰撞风险较低程度 collision_score=0.189；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 2,
+      "position": [
+        0.49312995168435286,
+        0.14283093463497248,
+        0.065
+      ],
+      "dx_to_target": 0.06,
+      "dy_to_target": 0.0,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.06020797289396147,
+      "neighbor_clearance": 0.026575549328807208,
+      "table_clearance": 0.045,
+      "yaw": 0.0,
+      "gripper_width": 0.055,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5085687442672459,
+      "score_terms": {
+        "center_score": 0.25,
+        "reachability_score": 0.8482537493565968,
+        "collision_score": 0.11958997197963228,
+        "height_score": 1.0,
+        "gripper_width_score": 0.4,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 2 距离目标中心 0.060 米，center_score=0.250；Franka 工作空间可达性 reachability_score=0.848；与桌面和其他物体的碰撞风险较低程度 collision_score=0.120；抓取高度合理性 height_score=1.000；夹爪宽度 0.055 米对 cylinder 的匹配分 gripper_width_score=0.400；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 11,
+      "position": [
+        0.49312995168435286,
+        0.20283093463497248,
+        0.075
+      ],
+      "dx_to_target": 0.06,
+      "dy_to_target": 0.06,
+      "dz_to_target": 0.0049999999999999906,
+      "distance_to_target_center": 0.08499999999999999,
+      "neighbor_clearance": 0.061679841387052195,
+      "table_clearance": 0.05499999999999999,
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5017848293418886,
+      "score_terms": {
+        "center_score": 0.0,
+        "reachability_score": 0.831364860467708,
+        "collision_score": 0.27755928624173487,
+        "height_score": 1.0,
+        "gripper_width_score": 0.7999999999999999,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 11 距离目标中心 0.085 米，center_score=0.000；Franka 工作空间可达性 reachability_score=0.831；与桌面和其他物体的碰撞风险较低程度 collision_score=0.278；抓取高度合理性 height_score=1.000；夹爪宽度 0.035 米对 cylinder 的匹配分 gripper_width_score=0.800；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+    },
+    {
+      "candidate_id": 8,
+      "position": [
+        0.49312995168435286,
+        0.08283093463497249,
+        0.065
+      ],
+      "dx_to_target": 0.06,
+      "dy_to_target": -0.06,
+      "dz_to_target": -0.0050000000000000044,
+      "distance_to_target_center": 0.08499999999999999,
+      "neighbor_clearance": 0.0420860059023771,
+      "table_clearance": 0.045,
+      "yaw": 1.5707963267948966,
+      "gripper_width": 0.02,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "score": 0.5015281551834588,
+      "score_terms": {
+        "center_score": 0.0,
+        "reachability_score": 0.8682537493565968,
+        "collision_score": 0.18938702656069695,
+        "height_score": 1.0,
+        "gripper_width_score": 0.9,
+        "yaw_score": 1.0
+      },
+      "explanation": "候选 8 距离目标中心 0.085 米，center_score=0.000；Franka 工作空间可达性 reachability_score=0.868；与桌面和其他物体的碰撞风险较低程度 collision_score=0.189；抓取高度合理性 height_score=1.000；夹爪宽度 0.020 米对 cylinder 的匹配分 gripper_width_score=0.900；yaw=90.0 度的方向适配分 yaw_score=1.000。"
+    }
+  ],
+  "selected_candidate": {
+    "candidate_id": 5,
+    "position": [
+      0.43312995168435287,
+      0.14283093463497248,
+      0.055
+    ],
+    "dx_to_target": 0.0,
+    "dy_to_target": 0.0,
+    "dz_to_target": -0.015000000000000006,
+    "distance_to_target_center": 0.015000000000000006,
+    "neighbor_clearance": 0.08574782190529454,
+    "table_clearance": 0.035,
+    "yaw": 0.0,
+    "gripper_width": 0.025,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "score": 0.9441872561345404,
+    "score_terms": {
+      "center_score": 1.0,
+      "reachability_score": 0.835071082098876,
+      "collision_score": 0.8858651985738254,
+      "height_score": 1.0,
+      "gripper_width_score": 1.0,
+      "yaw_score": 1.0
+    },
+    "explanation": "候选 5 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.835；与桌面和其他物体的碰撞风险较低程度 collision_score=0.886；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+  }
+}

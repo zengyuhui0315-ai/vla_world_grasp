@@ -1,0 +1,17 @@
+{
+  "instruction": "抓起蓝色圆柱",
+  "backend": "qwen_vl",
+  "actual_backend": "mock_vla",
+  "mode": "target_localization",
+  "target_label_zh": "",
+  "target_label_en": "",
+  "bbox_2d": null,
+  "point_2d": null,
+  "matched_target_name": "blue_cylinder",
+  "confidence": 0.95,
+  "reason_zh": "",
+  "fallback_used": true,
+  "fallback_reason": "qwen model path does not exist: <empty>",
+  "raw_model_output": "",
+  "message": "fallback to mock_vla: qwen model path does not exist: <empty>"
+}

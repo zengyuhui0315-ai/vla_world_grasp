@@ -1,0 +1,77 @@
+[
+  {
+    "name": "yellow_cube_0",
+    "type": "cube",
+    "color": "yellow",
+    "position": [
+      0.45593685205874035,
+      0.010831683642482326,
+      0.045
+    ],
+    "size": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "rgb": [
+      1.0,
+      0.82,
+      0.05
+    ],
+    "mass": 0.05,
+    "friction": 0.8,
+    "shape": "cube",
+    "object_id": "yellow_cube_0",
+    "label": "yellow cube"
+  },
+  {
+    "name": "blue_cylinder_1",
+    "type": "cylinder",
+    "color": "blue",
+    "position": [
+      0.3825757353118701,
+      -0.11088102328585463,
+      0.07
+    ],
+    "size": [
+      0.08,
+      0.08,
+      0.1
+    ],
+    "rgb": [
+      0.05,
+      0.24,
+      1.0
+    ],
+    "mass": 0.03,
+    "friction": 1.2,
+    "shape": "cylinder",
+    "object_id": "blue_cylinder_1",
+    "label": "blue cylinder"
+  },
+  {
+    "name": "black_sphere_2",
+    "type": "sphere",
+    "color": "black",
+    "position": [
+      0.4637582397119291,
+      -0.17108389170375532,
+      0.05
+    ],
+    "size": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "rgb": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "mass": 0.04,
+    "friction": 0.8,
+    "shape": "sphere",
+    "object_id": "black_sphere_2",
+    "label": "black sphere"
+  }
+]

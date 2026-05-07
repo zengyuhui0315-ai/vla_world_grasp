@@ -1,0 +1,4 @@
+# Stage 0 skeleton dependencies.
+# Isaac Sim and IsaacLab are expected to be provided by the runtime environment.
+
+PyYAML>=6.0

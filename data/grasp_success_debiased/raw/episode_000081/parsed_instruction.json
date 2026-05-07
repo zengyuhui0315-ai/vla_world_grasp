@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "抓起黑色圆柱",
+  "language": "zh",
+  "intent": "pick",
+  "target_color": "black",
+  "target_type": "cylinder",
+  "target_position_hint": null,
+  "normalized_target_label_zh": "黑色圆柱",
+  "normalized_target_label_en": "black cylinder",
+  "confidence": 0.8500000000000001
+}

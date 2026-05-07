@@ -1,0 +1,31 @@
+{
+  "instruction": "抓起红色方块",
+  "backend": "qwen_vl",
+  "model_path": "/home/ubuntu/models/Qwen2.5-VL-3B-Instruct",
+  "actual_backend": "qwen_vl",
+  "mode": "grounding",
+  "actual_mode": "grounding",
+  "target_label_zh": "红色方块",
+  "target_label_en": "red cube",
+  "color": "red",
+  "shape": "cube",
+  "bbox_2d": null,
+  "point_2d": null,
+  "matched_target_name": "red_cube",
+  "confidence": 0.9,
+  "reason_zh": "千问根据图像和中文指令识别目标为 红色方块。",
+  "semantic_match_used": true,
+  "bbox_point_used_for_target": false,
+  "qwen_bbox_valid": null,
+  "qwen_point_valid": null,
+  "qwen_point_to_matched_object_px": null,
+  "matched_object_projected_point": [
+    279.2664140165276,
+    271.10198325215595
+  ],
+  "bbox_validation_warning": "",
+  "fallback_used": false,
+  "fallback_reason": "",
+  "raw_model_output": "```json\n{\n  \"target_object\": \"red cube\",\n  \"color\": \"red\",\n  \"shape\": \"cube\",\n  \"grasp_hint\": \"top-down grasp at object center\"\n}\n```",
+  "message": "target localized by Qwen2.5-VL grounding"
+}

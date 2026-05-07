@@ -1,0 +1,11 @@
+{
+  "frames_dir": "/home/ubuntu/work/vla_world_model_grasp/outputs/recordings/3_middle_object/frames",
+  "frame_count": 24,
+  "fps": 8,
+  "mp4_path": null,
+  "ffmpeg": {
+    "available": false,
+    "encoded": false,
+    "message": "ffmpeg not found; RGB frames were saved instead"
+  }
+}

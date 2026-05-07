@@ -1,0 +1,368 @@
+{
+  "instruction": "抓起红色方块",
+  "target_name": "red_cube",
+  "target_position": [
+    0.45,
+    -0.12,
+    0.045
+  ],
+  "all_candidates": [
+    {
+      "candidate_id": 4,
+      "position": [
+        0.45,
+        -0.12,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.0,
+        "reachability": 1.0,
+        "collision_risk": 0.05,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.992
+    },
+    {
+      "candidate_id": 13,
+      "position": [
+        0.45,
+        -0.12,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.0,
+        "reachability": 1.0,
+        "collision_risk": 0.1,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.924
+    },
+    {
+      "candidate_id": 1,
+      "position": [
+        0.42000000000000004,
+        -0.12,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.02999999999999997,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7845000000000002
+    },
+    {
+      "candidate_id": 7,
+      "position": [
+        0.48,
+        -0.12,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.02999999999999997,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7845000000000002
+    },
+    {
+      "candidate_id": 3,
+      "position": [
+        0.45,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.03,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7845
+    },
+    {
+      "candidate_id": 5,
+      "position": [
+        0.45,
+        -0.09,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.03,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7845
+    },
+    {
+      "candidate_id": 0,
+      "position": [
+        0.42000000000000004,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7316877707974305
+    },
+    {
+      "candidate_id": 2,
+      "position": [
+        0.42000000000000004,
+        -0.09,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7316877707974305
+    },
+    {
+      "candidate_id": 6,
+      "position": [
+        0.48,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7316877707974305
+    },
+    {
+      "candidate_id": 8,
+      "position": [
+        0.48,
+        -0.09,
+        0.045
+      ],
+      "yaw": 0.0,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.55,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 1.0
+      },
+      "score": 0.7316877707974305
+    },
+    {
+      "candidate_id": 10,
+      "position": [
+        0.42000000000000004,
+        -0.12,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.02999999999999997,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.7165000000000002
+    },
+    {
+      "candidate_id": 12,
+      "position": [
+        0.45,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.03,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.7165
+    },
+    {
+      "candidate_id": 14,
+      "position": [
+        0.45,
+        -0.09,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.03,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.7165
+    },
+    {
+      "candidate_id": 9,
+      "position": [
+        0.42000000000000004,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.6636877707974306
+    },
+    {
+      "candidate_id": 11,
+      "position": [
+        0.42000000000000004,
+        -0.09,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.6636877707974306
+    },
+    {
+      "candidate_id": 15,
+      "position": [
+        0.48,
+        -0.15,
+        0.045
+      ],
+      "yaw": 0.7853981633974483,
+      "gripper_width": 0.035,
+      "approach_height": 0.15,
+      "source": "geometry",
+      "features": {
+        "distance_to_target_center": 0.04242640687119283,
+        "reachability": 1.0,
+        "collision_risk": 0.6,
+        "height_valid": 1.0,
+        "width_match": 1.0,
+        "yaw_score": 0.0
+      },
+      "score": 0.6636877707974306
+    }
+  ],
+  "selected_candidate": {
+    "candidate_id": 4,
+    "position": [
+      0.45,
+      -0.12,
+      0.045
+    ],
+    "yaw": 0.0,
+    "gripper_width": 0.035,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "features": {
+      "distance_to_target_center": 0.0,
+      "reachability": 1.0,
+      "collision_risk": 0.05,
+      "height_valid": 1.0,
+      "width_match": 1.0,
+      "yaw_score": 1.0
+    },
+    "score": 0.992
+  }
+}

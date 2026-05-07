@@ -1,0 +1,28 @@
+中文指令：抓起蓝色圆柱
+解析目标：{"confidence": 0.8500000000000001, "intent": "pick", "language": "zh", "normalized_target_label_en": "blue cylinder", "normalized_target_label_zh": "蓝色圆柱", "raw_instruction": "抓起蓝色圆柱", "target_color": "blue", "target_position_hint": null, "target_type": "cylinder"}
+目标物体：blue_cylinder
+选择原因：matched color+type: blue cylinder
+
+评分公式：
+score = 0.30 * center_score + 0.20 * reachability_score + 0.20 * collision_score + 0.15 * height_score + 0.10 * gripper_width_score + 0.05 * yaw_score
+
+Top-5 候选动作得分：
+1. candidate_id=4, score=0.9652, position=[0.52, 0.03, 0.07], yaw=0.000
+   score_terms: center=1.000, reachability=0.876, collision=0.950, height=1.000, width=1.000, yaw=1.000
+   解释：候选 4 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.876；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。
+2. candidate_id=13, score=0.9552, position=[0.52, 0.03, 0.07], yaw=0.785
+   score_terms: center=1.000, reachability=0.876, collision=0.900, height=1.000, width=1.000, yaw=1.000
+   解释：候选 13 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.876；与桌面和其他物体的碰撞风险较低程度 collision_score=0.900；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=45.0 度的方向适配分 yaw_score=1.000。
+3. candidate_id=3, score=0.7547, position=[0.52, 0.0, 0.07], yaw=0.000
+   score_terms: center=0.625, reachability=0.886, collision=0.450, height=1.000, width=1.000, yaw=1.000
+   解释：候选 3 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.886；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。
+4. candidate_id=5, score=0.7507, position=[0.52, 0.06, 0.07], yaw=0.000
+   score_terms: center=0.625, reachability=0.866, collision=0.450, height=1.000, width=1.000, yaw=1.000
+   解释：候选 5 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.866；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。
+5. candidate_id=7, score=0.7502, position=[0.55, 0.03, 0.07], yaw=0.000
+   score_terms: center=0.625, reachability=0.863, collision=0.450, height=1.000, width=1.000, yaw=1.000
+   解释：候选 7 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.863；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。
+
+为什么选择最终动作：候选 4 的 baseline_score 最高，为 0.9652。
+最佳候选解释：候选 4 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.876；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cylinder 的匹配分 gripper_width_score=1.000；yaw=0.0 度的方向适配分 yaw_score=1.000。
+最终执行动作：Franka 使用 top-down 抓取，移动到 [0.52, 0.03, 0.07]，yaw=0.000，夹爪宽度=0.025。

@@ -1,0 +1,22 @@
+project:
+  name: vla_world_model_grasp
+  stage: 0
+
+runtime:
+  headless: true
+  vla_backend: mock_vla
+
+paths:
+  outputs_dir: outputs
+  reports_dir: reports
+
+sim:
+  isaac_sim_version: "4.5"
+  robot: franka_panda
+  task: desktop_top_down_grasp
+
+vla:
+  fallback_backend: mock_vla
+
+grasp:
+  scorer: baseline_score

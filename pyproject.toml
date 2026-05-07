@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vla-world-model-grasp"
+version = "0.0.1"
+description = "Desktop object grasping MVP with Isaac Sim, IsaacLab, VLA localization, and Franka Panda."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

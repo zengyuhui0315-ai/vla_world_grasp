@@ -1,0 +1,5 @@
+{
+  "episode_id": 1,
+  "scene_seed": 0,
+  "error_msg": "No CUDA GPUs are available"
+}

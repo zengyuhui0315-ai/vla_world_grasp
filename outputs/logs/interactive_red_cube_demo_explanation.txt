@@ -1,0 +1,28 @@
+中文指令：抓起红色方块
+解析目标：{"confidence": 0.8500000000000001, "intent": "pick", "language": "zh", "normalized_target_label_en": "red cube", "normalized_target_label_zh": "红色方块", "raw_instruction": "抓起红色方块", "target_color": "red", "target_position_hint": null, "target_type": "cube"}
+目标物体：red_cube
+选择原因：matched color+type: red cube
+
+评分公式：
+score = 0.30 * center_score + 0.20 * reachability_score + 0.20 * collision_score + 0.15 * height_score + 0.10 * gripper_width_score + 0.05 * yaw_score
+
+Top-5 候选动作得分：
+1. candidate_id=0, score=0.9493, position=[0.45, -0.12, 0.045], yaw=0.000
+   score_terms: center=1.000, reachability=0.847, collision=0.950, height=1.000, width=0.900, yaw=1.000
+   解释：候选 0 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.847；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.040 米对 cube 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。
+2. candidate_id=5, score=0.9287, position=[0.45, -0.12, 0.035], yaw=0.000
+   score_terms: center=1.000, reachability=0.844, collision=0.950, height=1.000, width=0.700, yaw=1.000
+   解释：候选 5 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.844；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.050 米对 cube 的匹配分 gripper_width_score=0.700；yaw=0.0 度的方向适配分 yaw_score=1.000。
+3. candidate_id=6, score=0.8909, position=[0.45, -0.12, 0.07], yaw=2.356
+   score_terms: center=1.000, reachability=0.855, collision=0.900, height=1.000, width=0.900, yaw=0.000
+   解释：候选 6 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.855；与桌面和其他物体的碰撞风险较低程度 collision_score=0.900；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cube 的匹配分 gripper_width_score=0.900；yaw=135.0 度的方向适配分 yaw_score=0.000。
+4. candidate_id=13, score=0.7359, position=[0.42000000000000004, -0.12, 0.07], yaw=0.000
+   score_terms: center=0.625, reachability=0.842, collision=0.450, height=1.000, width=0.900, yaw=1.000
+   解释：候选 13 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.842；与桌面和其他物体的碰撞风险较低程度 collision_score=0.450；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cube 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。
+5. candidate_id=14, score=0.6679, position=[0.45, -0.09, 0.045], yaw=0.785
+   score_terms: center=0.625, reachability=0.857, collision=0.395, height=1.000, width=0.800, yaw=0.000
+   解释：候选 14 距离目标中心 0.030 米，center_score=0.625；Franka 工作空间可达性 reachability_score=0.857；与桌面和其他物体的碰撞风险较低程度 collision_score=0.395；抓取高度合理性 height_score=1.000；夹爪宽度 0.025 米对 cube 的匹配分 gripper_width_score=0.800；yaw=45.0 度的方向适配分 yaw_score=0.000。
+
+为什么选择最终动作：候选 0 的 baseline_score 最高，为 0.9493。
+最佳候选解释：候选 0 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.847；与桌面和其他物体的碰撞风险较低程度 collision_score=0.950；抓取高度合理性 height_score=1.000；夹爪宽度 0.040 米对 cube 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。
+最终执行动作：Franka 使用 top-down 抓取，移动到 [0.45, -0.12, 0.045]，yaw=0.000，夹爪宽度=0.040。

@@ -1,0 +1,135 @@
+{
+  "episode_id": 68,
+  "scene_seed": 67,
+  "instruction_zh": "抓起白色方块",
+  "parsed_instruction": {
+    "raw_instruction": "抓起白色方块",
+    "language": "zh",
+    "intent": "pick",
+    "target_color": "white",
+    "target_type": "cube",
+    "target_position_hint": null,
+    "normalized_target_label_zh": "白色方块",
+    "normalized_target_label_en": "white cube",
+    "confidence": 0.8500000000000001
+  },
+  "target_name": "white_cube_0",
+  "target_type": "cube",
+  "target_color": "white",
+  "requested_target_name": "white_cube_0",
+  "debug_attach_on_grasp": true,
+  "attach_mode": "mixed",
+  "selected_candidate": {
+    "candidate_id": 0,
+    "position": [
+      0.4167124501334058,
+      0.03468808766162315,
+      0.045
+    ],
+    "dx_to_target": 0.0,
+    "dy_to_target": 0.0,
+    "dz_to_target": 0.0,
+    "distance_to_target_center": 0.0,
+    "neighbor_clearance": 0.08721539341130574,
+    "table_clearance": 0.024999999999999998,
+    "yaw": 0.0,
+    "gripper_width": 0.03,
+    "approach_height": 0.15,
+    "source": "geometry",
+    "score": 0.9407023712676893,
+    "score_terms": {
+      "center_score": 1.0,
+      "reachability_score": 0.8610425859875706,
+      "collision_score": 0.8924692703508759,
+      "height_score": 1.0,
+      "gripper_width_score": 0.8999999999999999,
+      "yaw_score": 1.0
+    },
+    "explanation": "候选 0 距离目标中心 0.000 米，center_score=1.000；Franka 工作空间可达性 reachability_score=0.861；与桌面和其他物体的碰撞风险较低程度 collision_score=0.892；抓取高度合理性 height_score=1.000；夹爪宽度 0.030 米对 cube 的匹配分 gripper_width_score=0.900；yaw=0.0 度的方向适配分 yaw_score=1.000。"
+  },
+  "success": false,
+  "attached": false,
+  "natural_physics_success": null,
+  "target_initial_z": 0.045,
+  "target_final_z": 0.045,
+  "execution": {
+    "success": false,
+    "target_object": "white_cube_0",
+    "target_name": "white_cube_0",
+    "target_type": "cube",
+    "debug_attach_on_grasp": true,
+    "attached": false,
+    "initial_z": 0.045,
+    "final_z": 0.045,
+    "target_initial_z": 0.045,
+    "target_final_z": 0.045,
+    "success_threshold_z": 0.125,
+    "trajectory": [
+      {
+        "name": "open_gripper",
+        "position": null,
+        "gripper_width": 0.035
+      },
+      {
+        "name": "approach",
+        "position": [
+          0.4167124501334058,
+          0.03468808766162315,
+          0.325
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "pre_grasp",
+        "position": [
+          0.4167124501334058,
+          0.03468808766162315,
+          0.185
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "descend",
+        "position": [
+          0.4167124501334058,
+          0.03468808766162315,
+          0.09
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "close_gripper",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "close_gripper_hold",
+        "position": null,
+        "gripper_width": 0.0
+      },
+      {
+        "name": "lift",
+        "position": [
+          0.4167124501334058,
+          0.03468808766162315,
+          0.365
+        ],
+        "gripper_width": null
+      },
+      {
+        "name": "final_hold",
+        "position": null,
+        "gripper_width": 0.0
+      }
+    ]
+  },
+  "video": null,
+  "metadata": {
+    "sim_backend": "isaac",
+    "rgb_source": "isaac_camera",
+    "depth_source": "isaac_camera",
+    "candidate_success_labels": "selected candidate has real episode success; non-selected rows leave success empty",
+    "label_policy": "episode-level selected candidate label",
+    "candidate_markers": "disabled"
+  }
+}

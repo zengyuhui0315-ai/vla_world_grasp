@@ -1,0 +1,27 @@
+{
+  "results_dir": "outputs/recordings",
+  "figure_path": "outputs/figures/success_rate_bar.png",
+  "total": 3,
+  "successes": 3,
+  "success_rate": 1.0,
+  "episodes": [
+    {
+      "instruction": "抓起红色方块",
+      "target": "red_cube",
+      "success": true,
+      "backend": "mock_vla"
+    },
+    {
+      "instruction": "抓起蓝色圆柱",
+      "target": "blue_cylinder",
+      "success": true,
+      "backend": "mock_vla"
+    },
+    {
+      "instruction": "抓起中间的物体",
+      "target": "green_sphere",
+      "success": true,
+      "backend": "mock_vla"
+    }
+  ]
+}
