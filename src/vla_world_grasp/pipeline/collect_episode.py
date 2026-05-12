@@ -160,20 +160,46 @@ def collect_episode(
                 scene.clear_debug_markers(settle_steps=0)
                 scene.step(3)
             print("[vla_world_grasp] Executing candidate...", flush=True)
-            eval_execution = execute_grasp(
-                scene,
-                eval_score.candidate,
-                debug_attach_on_grasp=debug_attach_on_grasp,
-            )
-            print(f"[vla_world_grasp] candidate_success={eval_execution.success}", flush=True)
-            candidate_eval_results[candidate_id] = {
-                "candidate_id": candidate_id,
-                "success": bool(eval_execution.success),
-                "attached": bool(eval_execution.attached),
-                "target_initial_z": float(eval_execution.initial_z),
-                "target_final_z": float(eval_execution.final_z),
-                "execution": eval_execution.to_dict(),
-            }
+            try:
+                eval_execution = execute_grasp(
+                    scene,
+                    eval_score.candidate,
+                    debug_attach_on_grasp=debug_attach_on_grasp,
+                )
+                print(f"[vla_world_grasp] candidate_success={eval_execution.success}", flush=True)
+                candidate_eval_results[candidate_id] = {
+                    "candidate_id": candidate_id,
+                    "success": bool(eval_execution.success),
+                    "attached": bool(eval_execution.attached),
+                    "target_initial_z": float(eval_execution.initial_z),
+                    "target_final_z": float(eval_execution.final_z),
+                    "execution": eval_execution.to_dict(),
+                    "error_msg": "",
+                }
+            except Exception as exc:
+                if isinstance(exc, TimeoutError):
+                    raise
+                error_msg = f"{type(exc).__name__}: {exc}"
+                print(
+                    f"[vla_world_grasp] WARNING: candidate eval failed "
+                    f"episode={episode_index:06d} candidate_id={candidate_id}: {error_msg}",
+                    flush=True,
+                )
+                failure_execution = _candidate_failure_execution(
+                    target_state=target_state,
+                    candidate_target_id=vla_result.target_id,
+                    debug_attach_on_grasp=debug_attach_on_grasp,
+                    error_msg=error_msg,
+                )
+                candidate_eval_results[candidate_id] = {
+                    "candidate_id": candidate_id,
+                    "success": False,
+                    "attached": False,
+                    "target_initial_z": failure_execution["initial_z"],
+                    "target_final_z": failure_execution["final_z"],
+                    "execution": failure_execution,
+                    "error_msg": error_msg,
+                }
         selected_candidate_id = int(selected_score.candidate.candidate_id)
         if selected_candidate_id in candidate_eval_results:
             primary_candidate_id = selected_candidate_id
@@ -334,7 +360,7 @@ def episode_to_csv_rows(episode: dict[str, Any]) -> list[dict[str, Any]]:
                 "depth_path": episode["depth_path"],
                 "object_states_path": episode["object_states_path"],
                 "candidate_json_path": episode["candidate_json_path"],
-                "error_msg": "",
+                "error_msg": eval_result.get("error_msg", "") if executed else "",
             }
         )
     return rows
@@ -427,6 +453,35 @@ def _objects_summary(objects: list[Any]) -> str:
         position = ", ".join(f"{value:.3f}" for value in obj.position)
         parts.append(f"{obj.name}(color={obj.color}, type={obj.type}, position=[{position}])")
     return "; ".join(parts)
+
+
+def _candidate_failure_execution(
+    target_state: dict[str, Any],
+    candidate_target_id: str,
+    debug_attach_on_grasp: bool,
+    error_msg: str,
+) -> dict[str, Any]:
+    initial_z = float(target_state.get("position", (0.0, 0.0, 0.0))[2])
+    target_type = str(target_state.get("type") or target_state.get("shape") or "")
+    target_name = str(target_state.get("name") or target_state.get("object_id") or candidate_target_id)
+    return {
+        "success": False,
+        "target_object": target_name,
+        "target_name": target_name,
+        "target_type": target_type,
+        "debug_attach_on_grasp": bool(debug_attach_on_grasp),
+        "attached": False,
+        "initial_z": initial_z,
+        "final_z": initial_z,
+        "target_initial_z": initial_z,
+        "target_final_z": initial_z,
+        "success_threshold_z": initial_z + 0.08,
+        "attach_xy_threshold": "",
+        "attach_z_threshold": "",
+        "attach_offset": "",
+        "trajectory": [],
+        "error_msg": error_msg,
+    }
 
 
 def _save_isaac_camera_observation(scene: GraspScene, ep_dir: Path) -> tuple[Path, Path]:
